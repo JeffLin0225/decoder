@@ -5,28 +5,35 @@
 
 	<groupId>jx</groupId>
 	<artifactId>decoder</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>decoder</name>
-	<description>jxdecode</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
+	<version>1.0.0-LS</version>
+	<name>DB_Url_decoder</name>
+	<description>for DB_URL_decode to connection</description>
+	<url>https://github.com/JeffLin0225/decoder</url> <licenses>
+	<license>
+		<name>MIT License</name>
+		<url>http://www.opensource.org/licenses/mit-license.php</url>
+	</license>
+</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<name>JeffLin0225</name>
+			<email/>
+			<url>https://github.com/JeffLin0225</url>
+		</developer>
 	</developers>
+
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:git://github.com/JeffLin0225/decoder.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/JeffLin0225/decoder.git</developerConnection>
+		<url>https://github.com/JeffLin0225/decoder</url>
 	</scm>
 
 	<properties>
 		<java.version>17</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<spring.version>6.1.6</spring.version> </properties>
+		<spring.version>6.1.6</spring.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -35,15 +42,20 @@
 			<version>${spring.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.1</version>
 			<scope>provided</scope>
 		</dependency>
-
-
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub JeffLin0225 Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/JeffLin0225/decoder</url>
+		</repository>
+	</distributionManagement>
 
 </project>
